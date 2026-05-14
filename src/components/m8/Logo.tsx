@@ -1,0 +1,22 @@
+export function M8Logo({ className = "" }: { className?: string }) {
+  // Placeholder textual — substituir pelo arquivo de logo enviado pelo cliente.
+  return (
+    <div className={`flex items-center gap-2 ${className}`}>
+      <div className="relative flex h-9 w-12 items-center justify-center clip-chamfer-sm bg-black border-chrome-dark">
+        <span className="font-display text-2xl text-chrome leading-none">M8</span>
+      </div>
+      <div className="flex flex-col leading-none">
+        <span className="font-display text-[11px] tracking-[0.25em] text-white/90">DISTRIBUIDOR</span>
+        <span className="font-display text-[10px] tracking-[0.3em] text-white/60">DE PNEUS</span>
+      </div>
+    </div>
+  );
+}
+
+export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" className={className} fill="currentColor" aria-hidden="true">
+      <path d="M19.11 17.21c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM16.02 4.5C9.65 4.5 4.5 9.65 4.5 16c0 2.04.54 4.03 1.56 5.79L4.5 27.5l5.86-1.53A11.46 11.46 0 0 0 16.02 27.5c6.36 0 11.51-5.15 11.51-11.5S22.38 4.5 16.02 4.5zm0 21.06a9.5 9.5 0 0 1-4.85-1.33l-.35-.21-3.48.91.93-3.39-.23-.36A9.5 9.5 0 1 1 16.02 25.56z" />
+    </svg>
+  );
+}
