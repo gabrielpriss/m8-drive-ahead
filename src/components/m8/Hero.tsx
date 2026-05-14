@@ -19,7 +19,7 @@ export function Hero() {
           Distribuidor M8 · São José dos Pinhais/PR
         </p>
         <h1 className="font-display text-chrome text-[34px] leading-[0.95] sm:text-5xl lg:text-6xl xl:text-7xl uppercase max-w-5xl">
-          Pneu pronto pra entregar quando o distribuidor grande disse que acabou
+          2.000 pneus em estoque. Entrega no mesmo dia.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
           Atacado a partir de 8 pneus, com estoque profundo em Curitiba e região.
