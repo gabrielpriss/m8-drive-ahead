@@ -167,7 +167,7 @@
   }
 
   .text-chrome {
-    background: linear-gradient(90deg, var(--m8-blue) 0%, var(--m8-blue) 25%, var(--m8-green) 50%, var(--m8-red) 75%, var(--m8-red) 100%);
+    background: linear-gradient(180deg, #f4f6f5 0%, #c1c6cc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
