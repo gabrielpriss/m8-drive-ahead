@@ -1,5 +1,6 @@
 import { Warehouse, Truck, ShieldCheck } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
+import { whatsappLink } from "@/lib/whatsapp";
 
 const TAGS = [
   "Lojas de pneus",
