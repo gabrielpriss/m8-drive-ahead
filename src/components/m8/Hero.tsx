@@ -1,15 +1,14 @@
 import { WhatsAppCTA, OutlineCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
+import heroBg from "@/assets/hero-tires.jpg";
 
 export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-black">
-      {/* Placeholder: substituir por foto real do barracão da M8 */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600&q=70&auto=format')",
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url(${heroBg})`,
         }}
         aria-hidden="true"
       />
@@ -28,7 +27,9 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <WhatsAppCTA href={whatsappLink("hero")}>Falar agora no WhatsApp</WhatsAppCTA>
-          <OutlineCTA href="#cadastro">Receber tabela de atacado</OutlineCTA>
+          <OutlineCTA href={whatsappLink("form")} external>
+            Receber tabela de atacado
+          </OutlineCTA>
         </div>
       </div>
 

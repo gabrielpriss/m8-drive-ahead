@@ -1,15 +1,14 @@
+import logoSrc from "@/assets/m8-logo.png";
+
 export function M8Logo({ className = "" }: { className?: string }) {
-  // Placeholder textual — substituir pelo arquivo de logo enviado pelo cliente.
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <div className="relative flex h-9 w-12 items-center justify-center clip-chamfer-sm bg-black border-chrome-dark">
-        <span className="font-display text-2xl text-chrome leading-none">M8</span>
-      </div>
-      <div className="flex flex-col leading-none">
-        <span className="font-display text-[11px] tracking-[0.25em] text-white/90">DISTRIBUIDOR</span>
-        <span className="font-display text-[10px] tracking-[0.3em] text-white/60">DE PNEUS</span>
-      </div>
-    </div>
+    <img
+      src={logoSrc}
+      alt="M8 Distribuidor de Pneus"
+      className={`h-10 w-auto object-contain sm:h-12 ${className}`}
+      width={180}
+      height={60}
+    />
   );
 }
 
