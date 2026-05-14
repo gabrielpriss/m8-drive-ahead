@@ -1,5 +1,5 @@
 // Único lugar para trocar o número quando o cliente fornecer o definitivo.
-export const WHATSAPP_NUMBER = "5541999999999";
+export const WHATSAPP_NUMBER = "5541998653615";
 
 export type WhatsAppContext =
   | "hero"

@@ -7,7 +7,6 @@ const NAV = [
   { href: "#marcas", label: "Marcas" },
   { href: "#depoimentos", label: "Depoimentos" },
   { href: "#faq", label: "FAQ" },
-  { href: "#cadastro", label: "Cadastro" },
 ];
 
 export function Footer() {
@@ -27,12 +26,18 @@ export function Footer() {
             Atendimento
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-white/65">
-            <li>Endereço: Rua Placeholder, 000 — São José dos Pinhais/PR</li>
+            <li>R. Raul Obladen, 865 — Itália, São José dos Pinhais/PR</li>
+            <li>CEP 83020-500</li>
             <li>Curitiba, Campo Largo, Colombo e região metropolitana</li>
             <li>Seg a Sex 8h-18h · Sáb 8h-12h</li>
             <li>
-              <a href="mailto:contato@m8pneus.com.br" className="hover:text-white">
-                contato@m8pneus.com.br
+              <a
+                href="https://wa.me/5541998653615"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                WhatsApp: (41) 99865-3615
               </a>
             </li>
           </ul>
@@ -57,8 +62,8 @@ export function Footer() {
           </h4>
           <div className="mt-4 overflow-hidden border-chrome-dark clip-chamfer-sm">
             <iframe
-              title="Localização M8 Distribuidor"
-              src="https://www.google.com/maps?q=S%C3%A3o+Jos%C3%A9+dos+Pinhais+PR&output=embed"
+              title="Localização M8 Distribuidor de Pneus"
+              src="https://www.google.com/maps?q=R.+Raul+Obladen,+865+-+It%C3%A1lia,+S%C3%A3o+Jos%C3%A9+dos+Pinhais+-+PR,+83020-500&output=embed"
               loading="lazy"
               className="h-44 w-full border-0"
             />
