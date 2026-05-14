@@ -3,6 +3,7 @@ import { M8Logo } from "./Logo";
 const NAV = [
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#como-funciona", label: "Como funciona" },
+  { href: "#para-quem", label: "Para quem é" },
   { href: "#produtos", label: "Produtos" },
   { href: "#marcas", label: "Marcas" },
   { href: "#depoimentos", label: "Depoimentos" },
@@ -17,8 +18,8 @@ export function Footer() {
         <div>
           <M8Logo />
           <p className="mt-4 text-sm text-white/65">
-            Distribuidor de pneus para revenda. Atendimento exclusivo para lojistas a partir de 8
-            pneus.
+            Distribuidor de pneus. Atacado para revenda e venda direta ao
+            consumidor com nota fiscal. Pronta entrega em Curitiba e região.
           </p>
         </div>
         <div>
@@ -63,7 +64,7 @@ export function Footer() {
           <div className="mt-4 overflow-hidden border-chrome-dark clip-chamfer-sm">
             <iframe
               title="Localização M8 Distribuidor de Pneus"
-              src="https://www.google.com/maps?q=R.+Raul+Obladen,+865+-+It%C3%A1lia,+S%C3%A3o+Jos%C3%A9+dos+Pinhais+-+PR,+83020-500&output=embed"
+              src="https://www.google.com/maps?q=R.%20Raul%20Obladen%2C%20865%20-%20It%C3%A1lia%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR%2C%2083020-500&z=16&output=embed"
               loading="lazy"
               className="h-44 w-full border-0"
             />
