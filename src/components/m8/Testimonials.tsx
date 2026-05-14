@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, Store, CircleDot, Wrench } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const ITEMS = [
@@ -7,6 +7,7 @@ const ITEMS = [
     role: "Loja de pneus, Curitiba",
     since: "2022",
     color: "var(--m8-blue)",
+    Icon: Store,
     text: "Quando o grande distribuidor diz que tá sem, eu ligo na M8 e sai no mesmo dia. Não perco mais venda por falta de estoque.",
   },
   {
@@ -14,6 +15,7 @@ const ITEMS = [
     role: "Borracharia, Campo Largo",
     since: "2021",
     color: "var(--m8-green)",
+    Icon: CircleDot,
     text: "Atendimento direto com o vendedor, sem fila e sem rodeio. Pedido fechado no WhatsApp e nota saindo certinha.",
   },
   {
@@ -21,6 +23,7 @@ const ITEMS = [
     role: "Auto Center, Colombo",
     since: "2023",
     color: "var(--m8-red)",
+    Icon: Wrench,
     text: "Preço fechou e entrega chegou rápido. Hoje a M8 é o fornecedor que eu chamo primeiro pra repor estoque.",
   },
 ];
@@ -30,6 +33,7 @@ export function Testimonials() {
     <section id="depoimentos" className="bg-[var(--graphite)] py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
+          level={2}
           title="Quem revende com a M8 não troca"
           subtitle="Clientes fiéis há mais de 3 anos."
         />
@@ -40,8 +44,11 @@ export function Testimonials() {
               className="border-chrome bg-[#0d0d0d] p-6 clip-chamfer hard-shadow"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 font-display text-lg text-white">
-                  {t.name.charAt(0)}
+                <div
+                  className="flex h-12 w-12 items-center justify-center rounded-full text-white"
+                  style={{ backgroundColor: t.color }}
+                >
+                  <t.Icon className="h-6 w-6" />
                 </div>
                 <div>
                   <div className="font-display text-sm uppercase tracking-wider text-white">

@@ -6,6 +6,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 const NAV = [
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#como-funciona", label: "Como funciona" },
+  { href: "#para-quem", label: "Para quem é" },
   { href: "#produtos", label: "Produtos" },
   { href: "#marcas", label: "Marcas" },
   { href: "#depoimentos", label: "Depoimentos" },

@@ -9,7 +9,7 @@ import { Brands } from "@/components/m8/Brands";
 import { Testimonials } from "@/components/m8/Testimonials";
 import { ForWhom } from "@/components/m8/ForWhom";
 import { Faq } from "@/components/m8/Faq";
-import { EndConsumer } from "@/components/m8/EndConsumer";
+import { ConsumerSection } from "@/components/m8/ConsumerSection";
 import { Footer } from "@/components/m8/Footer";
 import { WhatsappFloat } from "@/components/m8/WhatsappFloat";
 
@@ -50,12 +50,12 @@ function Index() {
         <Stats />
         <Differentials />
         <HowItWorks />
+        <ForWhom />
         <Products />
         <Brands />
         <Testimonials />
-        <ForWhom />
         <Faq />
-        <EndConsumer />
+        <ConsumerSection />
       </main>
       <Footer />
       <WhatsappFloat />
