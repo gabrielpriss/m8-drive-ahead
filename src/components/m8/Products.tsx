@@ -42,7 +42,8 @@ export function Products() {
     <section id="produtos" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
-          title="Linhas em pronta entrega"
+          eyebrow="Produtos"
+          title="Pronta entrega em todas as linhas"
           subtitle="Estoque profundo das categorias que mais giram na sua loja."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
