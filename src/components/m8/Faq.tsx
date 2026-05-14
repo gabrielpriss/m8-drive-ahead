@@ -5,7 +5,7 @@ import { SectionHeader } from "./SectionHeader";
 const ITEMS = [
   {
     q: "Qual o pedido mínimo?",
-    a: "A partir de 8 pneus por pedido.",
+    a: "Não temos pedido mínimo. A partir de 8 pneus você acessa a tabela de atacado. Compras menores também são atendidas com preço justo.",
   },
   {
     q: "Quais formas de pagamento vocês aceitam?",
@@ -27,6 +27,14 @@ const ITEMS = [
     q: "Como funciona a garantia?",
     a: "Garantia de fábrica direto com a marca, com suporte da M8 no processo.",
   },
+  {
+    q: "Vocês vendem para consumidor final?",
+    a: "Sim. Nosso foco é atacado a partir de 8 pneus, mas também atendemos quem precisa de 1, 2 ou 4 pneus para o próprio carro, com nota fiscal e garantia.",
+  },
+  {
+    q: "Qual a diferença de preço entre atacado e varejo?",
+    a: "No atacado (a partir de 8 pneus) você tem a tabela de distribuidor. No varejo, o preço é negociado direto com o vendedor e segue competitivo com o mercado.",
+  },
 ];
 
 export function Faq() {
@@ -34,7 +42,7 @@ export function Faq() {
   return (
     <section id="faq" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
-        <SectionHeader title="Dúvidas frequentes de revendedor" />
+        <SectionHeader level={2} title="Dúvidas frequentes" />
         <div className="mt-10 flex flex-col gap-3">
           {ITEMS.map((item, i) => {
             const active = open === i;
