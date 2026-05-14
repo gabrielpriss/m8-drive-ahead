@@ -35,11 +35,12 @@ const CARDS = [
 
 export function ForWhom() {
   return (
-    <section className="bg-black py-16 lg:py-24">
+    <section id="para-quem" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
+          level={2}
           title="Para quem vende pneu"
-          subtitle="A M8 é parceira de quem revende. Atendemos exclusivamente quem compra a partir de 8 pneus, com preço e prazo de distribuidor."
+          subtitle="A M8 é parceira de quem revende. Atendemos principalmente revenda, com preço de atacado a partir de 8 pneus. Compras menores também são bem-vindas."
         />
         <div className="mt-10 flex flex-wrap gap-3">
           {TAGS.map((t, i) => (
@@ -56,6 +57,18 @@ export function ForWhom() {
             </span>
           ))}
         </div>
+        <p className="mt-8 max-w-3xl text-sm text-white/75 sm:text-base">
+          Também atendemos consumidor final em compras menores, com nota fiscal e
+          garantia de fábrica.{" "}
+          <a
+            href={whatsappLink("consumidor-forwhom")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display text-xs uppercase tracking-[0.2em] text-white underline decoration-white/40 underline-offset-4 hover:decoration-white"
+          >
+            Cotar como consumidor →
+          </a>
+        </p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {CARDS.map((c) => (
             <div key={c.title} className="border-chrome p-6 clip-chamfer hard-shadow">
