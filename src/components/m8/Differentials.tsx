@@ -11,8 +11,8 @@ const ITEMS = [
   {
     icon: Wallet,
     color: "var(--m8-green)",
-    title: "Preço de distribuidor, sem atravessador",
-    text: "Compramos em volume e repassamos a margem pra sua loja.",
+    title: "Preço de distribuidor",
+    text: "Compramos em volume e repassamos a margem. Atacado a partir de 8 pneus, varejo com preço honesto.",
   },
   {
     icon: Headset,
@@ -33,6 +33,7 @@ export function Differentials() {
     <section id="diferenciais" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
+          eyebrow="Diferenciais"
           title="Por que lojistas escolhem a M8"
           subtitle="Estrutura própria, estoque profundo e agilidade para sua loja não perder venda."
         />
