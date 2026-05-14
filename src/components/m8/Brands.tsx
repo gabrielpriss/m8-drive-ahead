@@ -17,6 +17,7 @@ export function Brands() {
     <section id="marcas" className="bg-[var(--graphite)] py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
+          level={2}
           title="Marcas em estoque"
           subtitle="Trabalhamos com as marcas mais buscadas pelo seu cliente."
         />
@@ -24,9 +25,11 @@ export function Brands() {
           {BRANDS.map((b) => (
             <div
               key={b}
-              className="flex h-24 items-center justify-center bg-white text-black border-chrome clip-chamfer-sm"
+              className="flex h-24 items-center justify-center bg-[#0d0d0d] border-chrome-dark clip-chamfer-sm"
             >
-              <span className="font-display text-base uppercase tracking-wider">{b}</span>
+              <span className="font-display text-base uppercase tracking-[0.2em] text-white/55">
+                {b}
+              </span>
             </div>
           ))}
         </div>
