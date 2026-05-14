@@ -1,28 +1,39 @@
 import { SectionHeader } from "./SectionHeader";
 import { PrimaryCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
+import imgAuto from "@/assets/cat-automoveis.jpg";
+import imgSuv from "@/assets/cat-suv.jpg";
+import imgUtil from "@/assets/cat-utilitarios.jpg";
+import imgCam from "@/assets/cat-caminhoes.jpg";
 
 const CATS = [
   {
-    title: "Linha carro e caminhonete",
-    text: "Aro 13 ao 20 das principais marcas para giro rápido.",
-    badge: "Carro",
+    title: "Automóveis",
+    text: "Aro 13 ao 18 das principais marcas para o giro rápido da sua loja.",
+    badge: "Automóveis",
     badgeColor: "var(--m8-blue)",
-    img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=900&q=70&auto=format",
+    img: imgAuto,
   },
   {
-    title: "Linha de carga e comercial",
-    text: "Vans, utilitários e frotas com condições por volume.",
-    badge: "Carga",
+    title: "SUVs · Camionetes · Off Road",
+    text: "Linhas H/T, A/T e M/T para SUVs, picapes e aventura.",
+    badge: "SUV / 4x4",
     badgeColor: "var(--m8-green)",
-    img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=900&q=70&auto=format",
+    img: imgSuv,
   },
   {
-    title: "Linha pesada e caminhão",
-    text: "Pneus de caminhão e ônibus com margem para o lojista.",
-    badge: "Pesada",
+    title: "Utilitários",
+    text: "Vans, furgões e utilitários leves com sidewall reforçada.",
+    badge: "Utilitários",
     badgeColor: "var(--m8-red)",
-    img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=70&auto=format",
+    img: imgUtil,
+  },
+  {
+    title: "Caminhões (SC)",
+    text: "Linha pesada para caminhão e ônibus, com margem para o lojista.",
+    badge: "Caminhões",
+    badgeColor: "var(--m8-blue)",
+    img: imgCam,
   },
 ];
 
@@ -34,7 +45,7 @@ export function Products() {
           title="Linhas em pronta entrega"
           subtitle="Estoque profundo das categorias que mais giram na sua loja."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {CATS.map((c) => (
             <article
               key={c.title}
