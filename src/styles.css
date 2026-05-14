@@ -167,12 +167,11 @@
   }
 
   .text-chrome {
-    background: linear-gradient(180deg, #f5f5f5 0%, #c0c0c0 35%, #6b6b6b 60%, #cfcfcf 80%, #8a8a8a 100%);
+    background: linear-gradient(90deg, var(--m8-blue) 0%, var(--m8-blue) 25%, var(--m8-green) 50%, var(--m8-red) 75%, var(--m8-red) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.55));
   }
 
   .border-chrome {
