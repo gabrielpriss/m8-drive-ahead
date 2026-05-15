@@ -4,7 +4,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 
 const REVENDA = [
   "Fale com nosso vendedor no WhatsApp",
-  "Envie seu CNPJ e cidade",
+  "Informe a cidade e os modelos que você precisa",
   "Receba a tabela exclusiva de atacado",
   "Faça seu primeiro pedido com pronta entrega",
 ];

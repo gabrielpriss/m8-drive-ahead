@@ -2,7 +2,7 @@ const STATS = [
   { value: "2.000+", label: "Pneus em estoque" },
   { value: "Mesmo dia", label: "Na região metropolitana" },
   { value: "700m²", label: "De barracão próprio" },
-  { value: "8+ pneus", label: "Acesso à tabela de atacado" },
+  { value: "8+ marcas", label: "Principais marcas em estoque" },
 ];
 
 export function Stats() {

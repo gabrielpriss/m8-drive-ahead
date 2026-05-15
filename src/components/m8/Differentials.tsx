@@ -5,26 +5,26 @@ const ITEMS = [
   {
     icon: PackageCheck,
     color: "var(--m8-blue)",
-    title: "Pronta entrega quando o grande esgotou",
-    text: "Estoque profundo de 2.000 pneus em barracão próprio. Quando faltou no fornecedor do seu fornecedor, tem aqui.",
+    title: "2.000 pneus prontos para entrega",
+    text: "Estoque em barracão próprio de 700m². Quando o grande distribuidor diz que acabou, aqui ainda tem.",
   },
   {
     icon: Wallet,
     color: "var(--m8-green)",
-    title: "Preço de distribuidor",
-    text: "Compramos em volume e repassamos a margem. Atacado a partir de 8 pneus, varejo com preço honesto.",
+    title: "Preço direto de distribuidor",
+    text: "Compramos em volume e repassamos a margem. Atacado a partir de 8 pneus e varejo com preço honesto.",
   },
   {
     icon: Headset,
     color: "var(--m8-red)",
-    title: "Vendedor dedicado, sem bot",
-    text: "Atendimento humano por WhatsApp único. Sem fila, sem chatbot, sem URA.",
+    title: "Atendimento humano no WhatsApp",
+    text: "Vendedor dedicado, sem bot, sem fila e sem URA. Você fala direto com quem resolve.",
   },
   {
     icon: Truck,
     color: "var(--m8-blue)",
-    title: "Frota própria em Curitiba e região",
-    text: "Entrega no mesmo dia em Curitiba, São José, Campo Largo e Colombo.",
+    title: "Entrega no mesmo dia",
+    text: "Frota própria atendendo Curitiba, São José dos Pinhais, Campo Largo e Colombo.",
   },
 ];
 
