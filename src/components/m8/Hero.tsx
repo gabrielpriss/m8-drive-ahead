@@ -8,7 +8,7 @@ export function Hero() {
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url(${heroBg})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url(${heroBg})`,
         }}
         aria-hidden="true"
       />
@@ -19,17 +19,14 @@ export function Hero() {
           Distribuidor M8 · São José dos Pinhais/PR
         </p>
         <h1 className="font-display text-chrome text-[34px] leading-[0.95] sm:text-5xl lg:text-6xl xl:text-7xl uppercase max-w-5xl">
-          2.000 pneus em estoque. Entrega no mesmo dia.
+          Pneus em atacado à pronta entrega em Curitiba e região.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
-          Atacado a partir de 8 pneus, com estoque profundo em Curitiba e região.
+          2.000 pneus em estoque, atacado a partir de 8 pneus e entrega no mesmo dia.
           Atendimento direto com vendedor, sem bot e sem fila.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <WhatsAppCTA href={whatsappLink("hero")}>Falar agora no WhatsApp</WhatsAppCTA>
-          <OutlineCTA href={whatsappLink("form")} external>
-            Receber tabela de atacado
-          </OutlineCTA>
         </div>
         <p className="mt-6 font-display text-[12px] uppercase tracking-[0.18em] text-white/70">
           <a
