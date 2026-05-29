@@ -1,4 +1,4 @@
-import { WhatsAppCTA, OutlineCTA } from "./Buttons";
+import { WhatsAppCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
 import heroBg from "@/assets/hero-tires.jpg";
 
@@ -22,31 +22,12 @@ export function Hero() {
           Pneus em atacado à pronta entrega em Curitiba e região.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
-          2.000 pneus em estoque, atacado a partir de 8 pneus e entrega no mesmo dia.
-          Atendimento direto com vendedor, sem bot e sem fila.
+          Grande variedade de pneus à pronta entrega, condições especiais para
+          atacado e agilidade no atendimento. Fale direto com nossos vendedores.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <WhatsAppCTA href={whatsappLink("hero")}>Falar agora no WhatsApp</WhatsAppCTA>
         </div>
-        <p className="mt-6 font-display text-[12px] uppercase tracking-[0.18em] text-white/70">
-          <a
-            href={whatsappLink("hero")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white"
-          >
-            Sou revendedor (8+ pneus)
-          </a>
-          <span className="mx-3 text-white/30">·</span>
-          <a
-            href={whatsappLink("consumidor-hero")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white"
-          >
-            Sou consumidor (quero comprar pneu)
-          </a>
-        </p>
       </div>
 
       {/* faixa diagonal das 3 cores */}

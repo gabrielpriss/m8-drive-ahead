@@ -5,35 +5,19 @@ import { SectionHeader } from "./SectionHeader";
 const ITEMS = [
   {
     q: "Qual o pedido mínimo?",
-    a: "Não temos pedido mínimo. A partir de 8 pneus você acessa a tabela de atacado. Compras menores também são atendidas com preço justo.",
+    a: "Não exigimos pedido mínimo. Para compras em maior volume, oferecemos condições especiais para atacado e revenda.",
   },
   {
     q: "Quais formas de pagamento vocês aceitam?",
-    a: "Boleto, PIX e prazo para clientes cadastrados.",
-  },
-  {
-    q: "Vocês emitem nota fiscal?",
-    a: "Sim, todo pedido sai com NF-e.",
+    a: "PIX, cartão e boleto para clientes cadastrados, mediante análise e aprovação de crédito.",
   },
   {
     q: "Qual a região de entrega?",
-    a: "Curitiba, São José dos Pinhais, Campo Largo, Colombo e região metropolitana.",
-  },
-  {
-    q: "Quanto tempo leva a entrega?",
-    a: "Pedidos confirmados até 12h saem no mesmo dia para a região metropolitana.",
-  },
-  {
-    q: "Como funciona a garantia?",
-    a: "Garantia de fábrica direto com a marca, com suporte da M8 no processo.",
+    a: "Atendemos Curitiba e toda Região Metropolitana com entrega rápida. Consulte sua localização com nossa equipe comercial.",
   },
   {
     q: "Vocês vendem para consumidor final?",
-    a: "Sim. Nosso foco é atacado a partir de 8 pneus, mas também atendemos quem precisa de 1, 2 ou 4 pneus para o próprio carro, com nota fiscal e garantia.",
-  },
-  {
-    q: "Qual a diferença de preço entre atacado e varejo?",
-    a: "No atacado (a partir de 8 pneus) você tem a tabela de distribuidor. No varejo, o preço é negociado direto com o vendedor e segue competitivo com o mercado.",
+    a: "Sim. Além de atender atacado e revendas, também vendemos para consumidor final com garantia e pronta entrega.",
   },
 ];
 

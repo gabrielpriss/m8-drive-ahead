@@ -5,26 +5,26 @@ const ITEMS = [
   {
     icon: PackageCheck,
     color: "var(--m8-blue)",
-    title: "2.000 pneus prontos para entrega",
-    text: "Estoque em barracão próprio de 700m². Quando o grande distribuidor diz que acabou, aqui ainda tem.",
+    title: "Estoque sempre à pronta entrega",
+    text: "Variedade e disponibilidade para você não perder venda. Quando o grande distribuidor diz que acabou, aqui ainda tem.",
   },
   {
     icon: Wallet,
     color: "var(--m8-green)",
     title: "Preço direto de distribuidor",
-    text: "Compramos em volume e repassamos a margem. Atacado a partir de 8 pneus e varejo com preço honesto.",
+    text: "Compramos em volume e repassamos a margem, com condições especiais para atacado e revenda.",
   },
   {
     icon: Headset,
     color: "var(--m8-red)",
     title: "Atendimento humano no WhatsApp",
-    text: "Vendedor dedicado, sem bot, sem fila e sem URA. Você fala direto com quem resolve.",
+    text: "Vendedor dedicado, sem bot e sem fila. Você fala direto com quem resolve.",
   },
   {
     icon: Truck,
     color: "var(--m8-blue)",
-    title: "Entrega no mesmo dia",
-    text: "Frota própria atendendo Curitiba, São José dos Pinhais, Campo Largo e Colombo.",
+    title: "Entrega rápida",
+    text: "Frota própria atendendo Curitiba e Região Metropolitana com agilidade.",
   },
 ];
 
@@ -34,7 +34,7 @@ export function Differentials() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
           eyebrow="Diferenciais"
-          title="Por que lojistas escolhem a M8"
+          title="Estoque, preço e entrega rápida"
           subtitle="Estrutura própria, estoque profundo e agilidade para sua loja não perder venda."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

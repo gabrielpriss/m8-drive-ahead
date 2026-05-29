@@ -8,29 +8,33 @@ import imgCam from "@/assets/cat-caminhoes.jpg";
 
 const CATS = [
   {
-    title: "Automóveis",
-    text: "Aro 13 ao 18 das principais marcas para o giro rápido da sua loja.",
+    title: "Alto giro",
+    subtitle: "Medidas mais vendidas",
+    text: "As medidas com maior saída disponíveis à pronta entrega para sua revenda.",
     badge: "Automóveis",
     badgeColor: "var(--m8-blue)",
     img: imgAuto,
   },
   {
-    title: "SUVs · Camionetes · Off Road",
-    text: "Linhas H/T, A/T e M/T para SUVs, picapes e aventura.",
+    title: "SUV e crossover",
+    subtitle: "Linhas com maior demanda",
+    text: "Pneus para SUVs e crossovers com excelente giro e procura no mercado.",
     badge: "SUV / 4x4",
     badgeColor: "var(--m8-green)",
     img: imgSuv,
   },
   {
-    title: "Utilitários",
-    text: "Vans, furgões e utilitários leves com sidewall reforçada.",
+    title: "Linha comercial",
+    subtitle: "Utilitários e vans",
+    text: "Resistência e durabilidade para uso comercial e carga leve.",
     badge: "Utilitários",
     badgeColor: "var(--m8-red)",
     img: imgUtil,
   },
   {
-    title: "Caminhões (SC)",
-    text: "Linha pesada para caminhão e ônibus, com margem para o lojista.",
+    title: "Pickups • Off road",
+    subtitle: "Força e performance",
+    text: "Opções para estrada, trabalho pesado e uso misto.",
     badge: "Caminhões",
     badgeColor: "var(--m8-blue)",
     img: imgCam,
@@ -43,8 +47,8 @@ export function Products() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
           eyebrow="Produtos"
-          title="Pronta entrega em todas as linhas"
-          subtitle="Estoque profundo das categorias que mais giram na sua loja."
+          title="Estoque inteligente para sua revenda"
+          subtitle="As categorias e medidas que mais vendem disponíveis à pronta entrega."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {CATS.map((c) => (
@@ -69,6 +73,9 @@ export function Products() {
               </div>
               <div className="p-6">
                 <h3 className="font-display text-xl uppercase italic text-white">{c.title}</h3>
+                <p className="mt-1 font-display text-[11px] uppercase tracking-[0.22em] text-[var(--m8-green)]">
+                  {c.subtitle}
+                </p>
                 <p className="mt-2 text-sm text-white/70">{c.text}</p>
               </div>
             </article>

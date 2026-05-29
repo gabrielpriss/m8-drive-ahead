@@ -11,9 +11,8 @@ export function ConsumerSection() {
               Precisa de pneu para o seu carro?
             </h3>
             <p className="mt-3 text-sm text-white/75 sm:text-base">
-              Também vendemos para consumidor final. Pneu novo, nota fiscal e
-              garantia de fábrica. Mande a medida do seu pneu no WhatsApp e a gente
-              cota na hora.
+              Não tem loja mas precisa de pneus para seu veículo? Também atendemos
+              consumidor final com entrega rápida e garantia de fábrica.
             </p>
           </div>
           <WhatsAppCTA href={whatsappLink("consumidor-section")}>

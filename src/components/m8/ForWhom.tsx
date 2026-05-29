@@ -1,38 +1,15 @@
-import { Warehouse, Truck, ShieldCheck } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
-import { whatsappLink } from "@/lib/whatsapp";
 
 const TAGS = [
   "Lojas de pneus",
   "Borracharias",
   "Auto centers",
-  "Mecânicas e oficinas",
-  "Frotistas e transportadoras",
-  "Revendedores autônomos",
+  "Oficinas mecânicas",
+  "Frotistas",
+  "Revendedores",
 ];
 
 const COLORS = ["var(--m8-blue)", "var(--m8-green)", "var(--m8-red)"];
-
-const CARDS = [
-  {
-    icon: Warehouse,
-    title: "Barracão de 700m²",
-    text: "Estoque organizado e seguro em São José dos Pinhais.",
-    color: "var(--m8-blue)",
-  },
-  {
-    icon: Truck,
-    title: "Frota própria",
-    text: "Entrega rápida em Curitiba, Campo Largo, Colombo e região.",
-    color: "var(--m8-green)",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Operação segura",
-    text: "Conferência por nota e rastreabilidade do pedido.",
-    color: "var(--m8-red)",
-  },
-];
 
 export function ForWhom() {
   return (
@@ -40,8 +17,8 @@ export function ForWhom() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
           level={2}
-          title="Para quem vende pneu"
-          subtitle="A M8 é parceira de quem revende. Atendemos principalmente revenda, com preço de atacado a partir de 8 pneus. Compras menores também são bem-vindas."
+          title="M8, seu parceiro em pneus"
+          subtitle="Pronta entrega, negociação rápida e condições comerciais para sua loja atender o cliente sem demora."
         />
         <div className="mt-10 flex flex-wrap gap-3">
           {TAGS.map((t, i) => (
@@ -59,31 +36,9 @@ export function ForWhom() {
           ))}
         </div>
         <p className="mt-8 max-w-3xl text-sm text-white/75 sm:text-base">
-          Também atendemos consumidor final em compras menores, com nota fiscal e
-          garantia de fábrica.{" "}
-          <a
-            href={whatsappLink("consumidor-forwhom")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display text-xs uppercase tracking-[0.2em] text-white underline decoration-white/40 underline-offset-4 hover:decoration-white"
-          >
-            Cotar como consumidor →
-          </a>
+          Não tem loja mas precisa de pneus para seu veículo? Também atendemos
+          consumidor final com entrega rápida e garantia de fábrica.
         </p>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {CARDS.map((c) => (
-            <div key={c.title} className="border-chrome p-6 clip-chamfer hard-shadow">
-              <div
-                className="mb-5 inline-flex h-12 w-12 items-center justify-center clip-chamfer-sm"
-                style={{ backgroundColor: c.color }}
-              >
-                <c.icon className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="font-display text-lg uppercase italic text-white">{c.title}</h3>
-              <p className="mt-2 text-sm text-white/70">{c.text}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

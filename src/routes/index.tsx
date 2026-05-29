@@ -3,13 +3,13 @@ import { Header } from "@/components/m8/Header";
 import { Hero } from "@/components/m8/Hero";
 import { Stats } from "@/components/m8/Stats";
 import { Differentials } from "@/components/m8/Differentials";
-import { HowItWorks } from "@/components/m8/HowItWorks";
 import { Products } from "@/components/m8/Products";
 import { Brands } from "@/components/m8/Brands";
 import { Testimonials } from "@/components/m8/Testimonials";
 import { ForWhom } from "@/components/m8/ForWhom";
 import { Faq } from "@/components/m8/Faq";
 import { ConsumerSection } from "@/components/m8/ConsumerSection";
+import { LocationMap } from "@/components/m8/LocationMap";
 import { Footer } from "@/components/m8/Footer";
 import { WhatsappFloat } from "@/components/m8/WhatsappFloat";
 
@@ -49,7 +49,6 @@ function Index() {
         <Hero />
         <Stats />
         <Differentials />
-        <HowItWorks />
         <ForWhom />
         <Products />
         <Brands />
@@ -57,6 +56,7 @@ function Index() {
         <Faq />
         <ConsumerSection />
       </main>
+      <LocationMap />
       <Footer />
       <WhatsappFloat />
     </div>

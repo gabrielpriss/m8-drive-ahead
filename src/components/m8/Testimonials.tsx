@@ -16,7 +16,7 @@ const ITEMS = [
     since: "2021",
     color: "var(--m8-green)",
     Icon: CircleDot,
-    text: "Atendimento direto com o vendedor, sem fila e sem rodeio. Pedido fechado no WhatsApp e nota saindo certinha.",
+    text: "Atendimento direto com o vendedor, sem fila e sem rodeio. Fecho o pedido pelo WhatsApp e a entrega chega rápida pra repor o estoque.",
   },
   {
     name: "Auto Center parceiro",
@@ -34,8 +34,8 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <SectionHeader
           level={2}
-          title="Quem revende com a M8 não troca"
-          subtitle="Clientes fiéis há mais de 3 anos."
+          title="Quem compra na M8, continua com a M8"
+          subtitle="Clientes que valorizam estoque, agilidade e atendimento rápido."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {ITEMS.map((t) => (
