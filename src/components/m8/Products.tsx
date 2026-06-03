@@ -1,10 +1,10 @@
 import { SectionHeader } from "./SectionHeader";
 import { PrimaryCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
-import imgAuto from "@/assets/cat-automoveis.jpg";
-import imgSuv from "@/assets/cat-suv.jpg";
-import imgUtil from "@/assets/cat-utilitarios.jpg";
-import imgCam from "@/assets/cat-caminhoes.jpg";
+import imgAuto from "@/assets/pneus/automoveis.jpeg";
+import imgSuv from "@/assets/pneus/4x4.jpeg";
+import imgUtil from "@/assets/pneus/utilitarios.jpeg";
+import imgCam from "@/assets/pneus/caminhoes.jpeg";
 
 const CATS = [
   {
@@ -56,14 +56,14 @@ export function Products() {
               key={c.title}
               className="group relative overflow-hidden border-chrome clip-chamfer hard-shadow"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={c.img}
                   alt={c.title}
                   loading="lazy"
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                 <span
                   className="absolute left-4 top-4 px-3 py-1 font-display text-[11px] uppercase tracking-[0.22em] text-white clip-chamfer-sm"
                   style={{ backgroundColor: c.badgeColor }}
@@ -83,7 +83,7 @@ export function Products() {
         </div>
         <div className="mt-12 flex justify-center">
           <PrimaryCTA href={whatsappLink("produtos")} external>
-            Pedir tabela completa
+            Falar com atendente
           </PrimaryCTA>
         </div>
       </div>

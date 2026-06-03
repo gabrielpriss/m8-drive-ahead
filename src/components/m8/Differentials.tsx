@@ -1,30 +1,30 @@
-import { Truck, PackageCheck, Headset, Wallet } from "lucide-react";
+import { Truck, PackageCheck, Warehouse, Award } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const ITEMS = [
   {
     icon: PackageCheck,
     color: "var(--m8-blue)",
-    title: "Estoque sempre à pronta entrega",
-    text: "Variedade e disponibilidade para você não perder venda. Quando o grande distribuidor diz que acabou, aqui ainda tem.",
-  },
-  {
-    icon: Wallet,
-    color: "var(--m8-green)",
-    title: "Preço direto de distribuidor",
-    text: "Compramos em volume e repassamos a margem, com condições especiais para atacado e revenda.",
-  },
-  {
-    icon: Headset,
-    color: "var(--m8-red)",
-    title: "Atendimento humano no WhatsApp",
-    text: "Vendedor dedicado, sem bot e sem fila. Você fala direto com quem resolve.",
+    title: "O pneu que você precisa está aqui na M8!",
+    text: "Variedade, disponibilidade e condições especiais para você comprar com segurança.",
   },
   {
     icon: Truck,
-    color: "var(--m8-blue)",
+    color: "var(--m8-green)",
     title: "Entrega rápida",
-    text: "Frota própria atendendo Curitiba e Região Metropolitana com agilidade.",
+    text: "Seu pedido com mais velocidade e menos espera. (Curitiba e Região Metropolitana)",
+  },
+  {
+    icon: Warehouse,
+    color: "var(--m8-red)",
+    title: "Estrutura própria",
+    text: "Espaço preparado para garantir agilidade, estoque e atendimento de qualidade.",
+  },
+  {
+    icon: Award,
+    color: "var(--m8-blue)",
+    title: "As principais marcas em um só lugar",
+    text: "Qualidade, variedade e as melhores opções para você comprar com confiança.",
   },
 ];
 
@@ -35,7 +35,6 @@ export function Differentials() {
         <SectionHeader
           eyebrow="Diferenciais"
           title="Estoque, preço e entrega rápida"
-          subtitle="Estrutura própria, estoque profundo e agilidade para sua loja não perder venda."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {ITEMS.map((item) => (

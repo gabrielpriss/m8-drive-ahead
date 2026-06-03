@@ -1,6 +1,6 @@
 import { WhatsAppCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
-import heroBg from "@/assets/hero-tires.jpg";
+import heroBg from "@/assets/banner-principal.png";
 
 export function Hero() {
   return (
@@ -19,7 +19,10 @@ export function Hero() {
           Distribuidor M8 · São José dos Pinhais/PR
         </p>
         <h1 className="font-display text-chrome text-[34px] leading-[0.95] sm:text-5xl lg:text-6xl xl:text-7xl uppercase max-w-5xl">
-          Pneus em atacado à pronta entrega em Curitiba e região.
+          Pneus em atacado
+          <span className="mt-2 block text-[18px] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl">
+            à pronta entrega em Curitiba e região.
+          </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
           Grande variedade de pneus à pronta entrega, condições especiais para

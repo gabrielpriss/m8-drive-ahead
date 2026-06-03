@@ -18,7 +18,7 @@ export type WhatsAppContext =
 const MESSAGES: Record<WhatsAppContext, string> = {
   hero: "Olá! Sou lojista e quero cotação no atacado (8+ pneus).",
   "como-funciona": "Olá! Quero começar como revendedor M8.",
-  produtos: "Olá! Gostaria de receber a tabela completa de atacado.",
+  produtos: "Olá! Quero falar com um atendente sobre o atacado da M8.",
   sticky: "Olá! Tenho uma dúvida sobre a M8 Pneus.",
   header: "Olá! Sou lojista e quero falar sobre o atacado da M8.",
   diferenciais: "Olá! Quero entender melhor as condições de revenda da M8.",

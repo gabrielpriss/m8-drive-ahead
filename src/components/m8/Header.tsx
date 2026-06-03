@@ -34,6 +34,7 @@ export function Header() {
   }, []);
 
   return (
+    <>
     <header className="sticky top-0 z-50 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/80">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
         <a href="#top" className="flex items-center">
@@ -73,10 +74,11 @@ export function Header() {
         </div>
       </div>
       <div className="stripes-divider" />
+      </header>
 
       {/* mobile slide-in */}
       <div
-        className={`fixed inset-0 z-50 bg-black/70 transition-opacity lg:hidden ${
+        className={`fixed inset-0 z-[60] bg-black/70 transition-opacity lg:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={() => setOpen(false)}
@@ -123,6 +125,6 @@ export function Header() {
           </div>
         </aside>
       </div>
-    </header>
+    </>
   );
 }

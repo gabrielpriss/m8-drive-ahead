@@ -59,7 +59,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-white/55 sm:flex-row sm:justify-between lg:px-8">
-          <span>CNPJ XX.XXX.XXX/0001-XX</span>
+          <span>CNPJ 59.116.144/0001-50</span>
           <span>© 2026 M8 Pneus. Todos os direitos reservados.</span>
         </div>
       </div>
