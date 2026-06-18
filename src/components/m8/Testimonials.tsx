@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import googleLogo from "@/assets/download.png";
 
 const REVIEWS = [
   {
@@ -116,38 +117,36 @@ export function Testimonials() {
             <CarouselContent className="-ml-4">
               {REVIEWS.map((r) => (
                 <CarouselItem key={r.name} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <article className="border-chrome bg-[#0d0d0d] p-6 clip-chamfer hard-shadow h-full flex flex-col">
-                    <div className="flex items-center gap-3">
-                      <div
-                        className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full font-display font-bold text-sm text-white"
-                        style={{ backgroundColor: r.color }}
-                      >
-                        {r.initials}
-                      </div>
-                      <div>
-                        <div className="font-display text-sm uppercase tracking-wider text-white">
-                          {r.name}
+                  <article className="bg-white rounded-xl p-6 shadow-md h-full flex flex-col">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center gap-3">
+                        <div
+                          className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full font-bold text-sm text-white"
+                          style={{ backgroundColor: r.color }}
+                        >
+                          {r.initials}
                         </div>
-                        <div className="text-xs text-white/60">{r.badge}</div>
+                        <div>
+                          <div className="font-semibold text-sm text-gray-900">
+                            {r.name}
+                          </div>
+                          <div className="text-xs text-gray-500">{r.badge}</div>
+                        </div>
                       </div>
+                      <img src={googleLogo} alt="Google" className="h-6 w-auto opacity-80" />
                     </div>
-                    <div className="mt-4 flex items-center gap-2">
+                    <div className="flex items-center gap-2 mb-3">
                       <div className="flex gap-0.5" aria-label="5 estrelas">
                         {Array.from({ length: 5 }).map((_, i) => (
                           <Star
                             key={i}
-                            className="h-3.5 w-3.5 fill-[var(--m8-red)] text-[var(--m8-red)]"
+                            className="h-4 w-4 fill-[#FBBC04] text-[#FBBC04]"
                           />
                         ))}
                       </div>
-                      <span
-                        className="px-2 py-0.5 font-display text-[10px] uppercase tracking-[0.18em] text-white clip-chamfer-sm"
-                        style={{ backgroundColor: r.color }}
-                      >
-                        {r.time}
-                      </span>
+                      <span className="text-xs text-gray-400">{r.time}</span>
                     </div>
-                    <p className="mt-4 text-sm text-white/80 flex-1">{r.text}</p>
+                    <p className="text-sm text-gray-700 flex-1 leading-relaxed">{r.text}</p>
                   </article>
                 </CarouselItem>
               ))}
@@ -159,7 +158,7 @@ export function Testimonials() {
         <div className="mt-10 flex flex-col items-center gap-2">
           <div className="flex gap-1" aria-label="5 estrelas">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-[var(--m8-red)] text-[var(--m8-red)]" />
+              <Star key={i} className="h-5 w-5 fill-[#FBBC04] text-[#FBBC04]" />
             ))}
           </div>
           <a
