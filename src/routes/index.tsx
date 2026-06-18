@@ -12,7 +12,6 @@ import { ConsumerSection } from "@/components/m8/ConsumerSection";
 import { LocationMap } from "@/components/m8/LocationMap";
 import { Footer } from "@/components/m8/Footer";
 import { WhatsappFloat } from "@/components/m8/WhatsappFloat";
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
