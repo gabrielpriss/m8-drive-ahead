@@ -1,3 +1,4 @@
+import { WHATSAPP_NUMBER } from "@/lib/whatsapp";
 import { M8Logo } from "./Logo";
 
 const NAV = [
@@ -32,12 +33,12 @@ export function Footer() {
             <li>Seg a Sex 8h-18h · Sáb 8h-12h</li>
             <li>
               <a
-                href="https://wa.me/5541998653615"
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
               >
-                WhatsApp: (41) 99865-3615
+                WhatsApp: (41) 99749-2838
               </a>
             </li>
           </ul>
