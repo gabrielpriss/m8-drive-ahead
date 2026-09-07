@@ -19,7 +19,7 @@ export function Hero() {
           Distribuidor M8 · São José dos Pinhais/PR
         </p>
         <h1 className="font-display text-chrome text-[34px] leading-[0.95] sm:text-5xl lg:text-6xl xl:text-7xl uppercase max-w-5xl">
-          Pneus em atacado
+          Pneus em atacado{" "}
           <span className="mt-2 block text-[18px] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl">
             à pronta entrega em Curitiba e região.
           </span>

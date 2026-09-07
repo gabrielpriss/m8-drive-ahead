@@ -1,25 +1,7 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
-
-const ITEMS = [
-  {
-    q: "Qual o pedido mínimo?",
-    a: "Não exigimos pedido mínimo. Para compras em maior volume, oferecemos condições especiais para atacado e revenda.",
-  },
-  {
-    q: "Quais formas de pagamento vocês aceitam?",
-    a: "PIX, cartão e boleto para clientes cadastrados, mediante análise e aprovação de crédito.",
-  },
-  {
-    q: "Qual a região de entrega?",
-    a: "Atendemos Curitiba e toda Região Metropolitana com entrega rápida. Consulte sua localização com nossa equipe comercial.",
-  },
-  {
-    q: "Vocês vendem para consumidor final?",
-    a: "Sim. Além de atender atacado e revendas, também vendemos para consumidor final com garantia e pronta entrega.",
-  },
-];
+import { FAQ_ITEMS } from "@/lib/faq";
 
 export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
@@ -28,7 +10,7 @@ export function Faq() {
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <SectionHeader level={2} title="Dúvidas frequentes" />
         <div className="mt-10 flex flex-col gap-3">
-          {ITEMS.map((item, i) => {
+          {FAQ_ITEMS.map((item, i) => {
             const active = open === i;
             return (
               <div
@@ -53,7 +35,10 @@ export function Faq() {
                     <Plus className="h-5 w-5 shrink-0 text-white/70" />
                   )}
                 </button>
-                {active && <p className="px-5 pb-5 text-sm text-white/75">{item.a}</p>}
+                {/* Sempre no DOM (apenas oculto) para o FAQPage do JSON-LD bater com a página. */}
+                <p className="px-5 pb-5 text-sm text-white/75" hidden={!active}>
+                  {item.a}
+                </p>
               </div>
             );
           })}

@@ -9,6 +9,11 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { OG_IMAGE, SITE_URL } from "@/lib/seo";
+
+const SITE_TITLE = "M8 Distribuidor de Pneus | Atacado para Revenda";
+const SITE_DESCRIPTION =
+  "Distribuidor de pneus para revenda com pronta entrega em Curitiba e região metropolitana.";
 
 function NotFoundComponent() {
   return (
@@ -72,18 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "M8 Pneus: Atacado Rápido é uma landing page focada em captar revendedores de pneus." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "M8 Pneus: Atacado Rápido é uma landing page focada em captar revendedores de pneus." },
+      { title: SITE_TITLE },
+      { name: "description", content: SITE_DESCRIPTION },
+      { property: "og:title", content: SITE_TITLE },
+      { property: "og:description", content: SITE_DESCRIPTION },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "M8 Pneus: Atacado Rápido é uma landing page focada em captar revendedores de pneus." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb3c3a4e-b4f6-4722-8b0b-2e59a82fcb6d/id-preview-ec844eb8--05fcf1ba-fed4-418a-aa66-dcbfb8b2f5a5.lovable.app-1778869913771.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb3c3a4e-b4f6-4722-8b0b-2e59a82fcb6d/id-preview-ec844eb8--05fcf1ba-fed4-418a-aa66-dcbfb8b2f5a5.lovable.app-1778869913771.png" },
+      { property: "og:url", content: SITE_URL },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: SITE_TITLE },
+      { name: "twitter:description", content: SITE_DESCRIPTION },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
       {
@@ -100,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         {/* Google Tag Manager */}
         <script
