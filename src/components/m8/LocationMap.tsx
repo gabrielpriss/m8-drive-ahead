@@ -1,6 +1,6 @@
 const PROFILE_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("M8 Distribuidora de Pneus Ltda, São José dos Pinhais - PR");
+  encodeURIComponent("M8 Distribuidora de Pneus, Av. Marginal BR-376, 2612 - São Pedro, São José dos Pinhais - PR");
 
 export function LocationMap() {
   return (
@@ -11,7 +11,7 @@ export function LocationMap() {
     >
       <iframe
         title="Localização M8 Distribuidora de Pneus"
-        src="https://www.google.com/maps?q=M8%20Distribuidora%20de%20Pneus%20Ltda%2C%20R.%20Raul%20Obladen%2C%20865%20-%20It%C3%A1lia%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR%2C%2083020-500&z=13&output=embed"
+        src="https://www.google.com/maps?q=Av.%20Marginal%20BR-376%2C%202612%20-%20S%C3%A3o%20Pedro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR%2C%2083010-500&z=16&output=embed"
         loading="lazy"
         className="block h-[300px] w-full border-0 md:h-[420px] lg:h-[480px]"
       />

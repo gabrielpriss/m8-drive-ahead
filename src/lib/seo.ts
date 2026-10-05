@@ -14,10 +14,10 @@ export const LOCAL_BUSINESS_JSONLD = {
   telephone: "+5541997492838",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "R. Raul Obladen, 865 - Itália",
+    streetAddress: "Av. Marginal BR-376, 2612 - São Pedro",
     addressLocality: "São José dos Pinhais",
     addressRegion: "PR",
-    postalCode: "83020-500",
+    postalCode: "83010-500",
     addressCountry: "BR",
   },
   areaServed: "Curitiba e Região Metropolitana",

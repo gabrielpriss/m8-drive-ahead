@@ -27,8 +27,8 @@ export function Footer() {
             Atendimento
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-white/65">
-            <li>R. Raul Obladen, 865 — Itália, São José dos Pinhais/PR</li>
-            <li>CEP 83020-500</li>
+            <li>Av. Marginal BR-376, 2612, São Pedro, São José dos Pinhais/PR</li>
+            <li>CEP 83010-500</li>
             <li>Curitiba, Campo Largo, Colombo e região metropolitana</li>
             <li>Seg a Sex 8h-18h · Sáb 8h-12h</li>
             <li>
