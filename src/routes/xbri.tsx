@@ -15,8 +15,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 import { LOCAL_BUSINESS_JSONLD, OG_IMAGE, SITE_URL, faqJsonLd } from "@/lib/seo";
 import xbriLogo from "@/assets/brands/xbri.webp";
 
-// Página de teste para o grupo de anúncios de marca XBRI no Google Ads.
-// Fica fora do índice (noindex) e fora do sitemap até a aprovação.
+// Página do grupo de anúncios de marca XBRI no Google Ads (aprovada em 17/10/2026).
 const PAGE_URL = `${SITE_URL}xbri`;
 
 const XBRI_FAQ = [
@@ -74,7 +73,6 @@ export const Route = createFileRoute("/xbri")({
         content:
           "Pneus XBRI no atacado para revenda, com pronta entrega em Curitiba e região metropolitana. Fale com um vendedor da M8 pelo WhatsApp.",
       },
-      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "Pneus XBRI para Revenda | M8 Pneus" },
       {
         property: "og:description",

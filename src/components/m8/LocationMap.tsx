@@ -1,6 +1,10 @@
-const PROFILE_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("M8 Distribuidora de Pneus, Av. Marginal BR-376, 2612 - São Pedro, São José dos Pinhais - PR");
+// Perfil da empresa no Google (Google Meu Negócio), pelo CID do perfil.
+const PROFILE_URL = "https://maps.google.com/?cid=5755380305554683355";
+
+// Mapa incorporado vinculado ao perfil (mostra nome, nota e avaliações do Google),
+// com zoom regional mostrando parte de Curitiba e a região metropolitana.
+const EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60000!2d-49.235!3d-25.495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbe6b5ef8205%3A0x4fdf37e503ddb5db!2sM8%20Distribuidora%20de%20Pneus!5e0!3m2!1spt-BR!2sbr!4v1760731200000";
 
 export function LocationMap() {
   return (
@@ -11,7 +15,7 @@ export function LocationMap() {
     >
       <iframe
         title="Localização M8 Distribuidora de Pneus"
-        src="https://www.google.com/maps?q=Av.%20Marginal%20BR-376%2C%202612%20-%20S%C3%A3o%20Pedro%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR%2C%2083010-500&z=16&output=embed"
+        src={EMBED_URL}
         loading="lazy"
         className="block h-[300px] w-full border-0 md:h-[420px] lg:h-[480px]"
       />
