@@ -1,4 +1,4 @@
-import logoSrc from "@/assets/m8-logo.png";
+import logoSrc from "@/assets/m8-logo.webp";
 
 export function M8Logo({ className = "" }: { className?: string }) {
   return (
@@ -6,8 +6,8 @@ export function M8Logo({ className = "" }: { className?: string }) {
       src={logoSrc}
       alt="M8 Distribuidor de Pneus"
       className={`h-10 w-auto object-contain sm:h-12 ${className}`}
-      width={180}
-      height={60}
+      width={300}
+      height={119}
     />
   );
 }

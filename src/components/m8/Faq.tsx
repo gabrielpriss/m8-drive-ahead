@@ -3,14 +3,18 @@ import { Plus, Minus } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import { FAQ_ITEMS } from "@/lib/faq";
 
-export function Faq() {
+export function Faq({
+  items = FAQ_ITEMS,
+}: {
+  items?: ReadonlyArray<{ q: string; a: string }>;
+}) {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section id="faq" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <SectionHeader level={2} title="Dúvidas frequentes" />
         <div className="mt-10 flex flex-col gap-3">
-          {FAQ_ITEMS.map((item, i) => {
+          {items.map((item, i) => {
             const active = open === i;
             return (
               <div

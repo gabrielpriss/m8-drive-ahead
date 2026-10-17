@@ -1,17 +1,11 @@
 import { WhatsAppCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
-import heroBg from "@/assets/banner-principal.png";
+import { HeroBackground } from "./HeroBackground";
 
 export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-black">
-      <div
-        className="absolute inset-0 -z-10 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url(${heroBg})`,
-        }}
-        aria-hidden="true"
-      />
+      <HeroBackground />
       <div className="absolute inset-0 -z-10 carbon-texture opacity-[0.06]" aria-hidden="true" />
 
       <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 sm:pt-20 lg:px-8 lg:pb-28 lg:pt-28">

@@ -133,10 +133,10 @@ export function Testimonials() {
                           <div className="text-xs text-gray-500">{r.badge}</div>
                         </div>
                       </div>
-                      <img src={googleLogo} alt="Google" className="h-6 w-auto opacity-80" />
+                      <img src={googleLogo} alt="Google" width={68} height={24} loading="lazy" decoding="async" className="h-6 w-auto opacity-80" />
                     </div>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="flex gap-0.5" aria-label="5 estrelas">
+                      <div className="flex gap-0.5" role="img" aria-label="5 estrelas">
                         {Array.from({ length: 5 }).map((_, i) => (
                           <Star
                             key={i}
@@ -156,19 +156,14 @@ export function Testimonials() {
           </Carousel>
         </div>
         <div className="mt-10 flex flex-col items-center gap-2">
-          <div className="flex gap-1" aria-label="5 estrelas">
+          <div className="flex gap-1" role="img" aria-label="5 estrelas">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} className="h-5 w-5 fill-[#FBBC04] text-[#FBBC04]" />
             ))}
           </div>
-          <a
-            href="https://share.google/5QdQx03mrLid7Wl49"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display text-xs uppercase tracking-[0.22em] text-white/80 hover:text-white"
-          >
-            Ver avaliações no Google Meu Negócio
-          </a>
+          <p className="font-display text-xs uppercase tracking-[0.22em] text-white/80">
+            Avaliações de clientes no Google
+          </p>
         </div>
       </div>
     </section>

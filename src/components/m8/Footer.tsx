@@ -10,7 +10,7 @@ const NAV = [
   { href: "#faq", label: "FAQ" },
 ];
 
-export function Footer() {
+export function Footer({ linkBase = "" }: { linkBase?: string }) {
   return (
     <footer className="bg-black">
       <div className="stripes-divider" />
@@ -50,7 +50,7 @@ export function Footer() {
           <ul className="mt-4 grid grid-cols-2 gap-2 text-sm text-white/65">
             {NAV.map((n) => (
               <li key={n.href}>
-                <a href={n.href} className="hover:text-white">
+                <a href={linkBase + n.href} className="hover:text-white">
                   {n.label}
                 </a>
               </li>

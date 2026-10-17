@@ -13,7 +13,8 @@ export type WhatsAppContext =
   | "consumidor-hero"
   | "consumidor-howitworks"
   | "consumidor-forwhom"
-  | "consumidor-section";
+  | "consumidor-section"
+  | "xbri";
 
 const MESSAGES: Record<WhatsAppContext, string> = {
   hero: "Olá! Sou lojista e quero cotação no atacado (8+ pneus).",
@@ -31,6 +32,7 @@ const MESSAGES: Record<WhatsAppContext, string> = {
   "consumidor-forwhom": "Olá! Quero cotar pneu como consumidor final.",
   "consumidor-section":
     "Olá! Quero cotar pneu para meu carro. Minha medida é [digite aqui].",
+  xbri: "Olá! Sou lojista e quero cotação de pneus XBRI no atacado.",
 };
 
 export function whatsappLink(context: WhatsAppContext): string {

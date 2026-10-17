@@ -12,7 +12,8 @@ const NAV = [
   { href: "#faq", label: "FAQ" },
 ];
 
-export function Header() {
+// linkBase: "" na home (âncoras da própria página) e "/" nas páginas internas.
+export function Header({ linkBase = "" }: { linkBase?: string }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string>("");
 
@@ -37,14 +38,14 @@ export function Header() {
     <>
     <header className="sticky top-0 z-50 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/80">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
-        <a href="#top" className="flex items-center">
+        <a href={linkBase ? "/" : "#top"} className="flex items-center">
           <M8Logo />
         </a>
         <nav className="hidden items-center gap-6 lg:flex">
           {NAV.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={linkBase + item.href}
               className="relative font-display text-[13px] uppercase tracking-[0.18em] text-white/85 transition hover:text-white"
             >
               {item.label}
@@ -104,7 +105,7 @@ export function Header() {
             {NAV.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={linkBase + item.href}
                 onClick={() => setOpen(false)}
                 className="border-b border-white/10 py-4 font-display text-base uppercase tracking-[0.2em] text-white"
               >

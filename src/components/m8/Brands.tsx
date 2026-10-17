@@ -1,13 +1,13 @@
 import { SectionHeader } from "./SectionHeader";
-import westlake from "@/assets/brands/westlake.png";
-import compasal from "@/assets/brands/compasal.png";
-import kingboss from "@/assets/brands/kingboss.png";
-import linglong from "@/assets/brands/linglong.png";
-import xbri from "@/assets/brands/xbri.png";
-import ovation from "@/assets/brands/ovation.png";
-import sunset from "@/assets/brands/sunset.png";
-import lanvigator from "@/assets/brands/lanvigator.png";
-import invovic from "@/assets/brands/invovic.png";
+import westlake from "@/assets/brands/westlake.webp";
+import compasal from "@/assets/brands/compasal.webp";
+import kingboss from "@/assets/brands/kingboss.webp";
+import linglong from "@/assets/brands/linglong.webp";
+import xbri from "@/assets/brands/xbri.webp";
+import ovation from "@/assets/brands/ovation.webp";
+import sunset from "@/assets/brands/sunset.webp";
+import lanvigator from "@/assets/brands/lanvigator.webp";
+import invovic from "@/assets/brands/invovic.webp";
 
 const BRANDS = [
   { name: "Westlake", img: westlake },
@@ -54,6 +54,9 @@ export function Brands() {
                 src={b.img}
                 alt={b.name}
                 loading="lazy"
+                decoding="async"
+                width={264}
+                height={120}
                 className="h-full w-full object-contain"
               />
             </li>

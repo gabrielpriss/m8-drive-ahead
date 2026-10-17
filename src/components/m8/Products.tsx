@@ -1,10 +1,10 @@
 import { SectionHeader } from "./SectionHeader";
 import { PrimaryCTA } from "./Buttons";
 import { whatsappLink } from "@/lib/whatsapp";
-import imgAuto from "@/assets/pneus/automoveis.jpeg";
-import imgSuv from "@/assets/pneus/4x4.jpeg";
-import imgUtil from "@/assets/pneus/utilitarios.jpeg";
-import imgCam from "@/assets/pneus/caminhoes.jpeg";
+import imgAuto from "@/assets/pneus/automoveis.webp";
+import imgSuv from "@/assets/pneus/4x4.webp";
+import imgUtil from "@/assets/pneus/utilitarios.webp";
+import imgCam from "@/assets/pneus/caminhoes.webp";
 
 const CATS = [
   {
@@ -61,6 +61,9 @@ export function Products() {
                   src={c.img}
                   alt={c.title}
                   loading="lazy"
+                  decoding="async"
+                  width={600}
+                  height={800}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />

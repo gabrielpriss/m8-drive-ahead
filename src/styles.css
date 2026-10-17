@@ -107,6 +107,8 @@ body {
   --input: oklch(0.20 0 0);
   --ring: oklch(0.55 0.24 27);
   --m8-red: #E30613;
+  /* vermelho mais claro só para texto pequeno sobre fundo escuro (contraste AA) */
+  --m8-red-text: #FF5A63;
   --m8-blue: #0057B8;
   --m8-green: #00A651;
   --chart-1: oklch(0.646 0.222 41.116);
