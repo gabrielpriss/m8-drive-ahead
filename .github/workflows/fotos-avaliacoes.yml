@@ -1,0 +1,56 @@
+name: Fotos das avaliações
+
+# Baixa a foto de perfil do Google de cada avaliação de src/data/avaliacoes.json
+# e grava em public/avaliacoes/, para o site servir as fotos sem depender do Google.
+
+on:
+  push:
+    paths:
+      - src/data/avaliacoes.json
+      - scripts/baixar-fotos-avaliacoes.py
+      - .github/workflows/fotos-avaliacoes.yml
+  workflow_dispatch: {}
+
+concurrency:
+  group: fotos-avaliacoes-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Baixar fotos
+        run: |
+          pip install --quiet pillow
+          python scripts/baixar-fotos-avaliacoes.py
+
+      - name: Salvar no repositório
+        id: salvar
+        run: |
+          git add public/avaliacoes
+          if git diff --cached --quiet; then
+            echo "mudou=nao" >> "$GITHUB_OUTPUT"
+            echo "Fotos já estavam atualizadas."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Fotos das avaliações do Google"
+            git push
+            echo "mudou=sim" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Commits feitos pelo GITHUB_TOKEN não disparam o deploy sozinhos.
+      - name: Publicar de novo
+        if: steps.salvar.outputs.mudou == 'sim' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
